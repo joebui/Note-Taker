@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/add_title" android:hint="Title" android:singleLine="true"
+        android:layout_margin="@dimen/ten"/>
+
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/group_choice" android:layout_margin="@dimen/ten"/>
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/add_content" android:hint="Note Content"
+        android:layout_margin="@dimen/ten"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/add_note_button" android:layout_gravity="center"
+        android:layout_margin="@dimen/ten"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dienbui.notetaker" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".NoteMenu"/>
+        <activity android:name=".GroupMenu"/>
+        <activity android:name=".AddingGroup"/>
+        <activity android:name=".AddingNote"/>
+        <activity android:name=".EditingNote"/>
+        <activity android:name=".EditingGroup"/>
+        <activity android:name=".About"/>
+        <activity android:name=".Searching"/>
+
+        <receiver android:name=".WidgetController" android:label="Note-Taker">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/note_widget" />
+        </receiver>
+
+        <service android:name=".WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"
+            />
+    </application>
+</manifest>

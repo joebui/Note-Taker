@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainMenu">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:showAsAction="always"/>
+
+    <item android:title="Add" android:icon="@drawable/ic_note_add_white_24dp"
+        android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/add_note" android:title="New Note"/>
+            <item android:id="@+id/add_group" android:title="New Group"/>
+        </menu>
+    </item>
+
+    <item android:title="More" android:icon="@drawable/ic_view_headline_white_24dp"
+        android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/about" android:title="About"/>
+        </menu>
+    </item>
+</menu>
